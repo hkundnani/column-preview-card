@@ -1,0 +1,96 @@
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+  --font-lexend-deca: "Lexend Deca", sans-serif;
+  --font-big-shoulders-display: "Big Shoulders Display", cursive;
+}
+
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--veryLightGray);
+  color: var(--transparentWhite);
+  font-weight: 400;
+  font-family: var(--font-lexend-deca);
+  line-height: 1;
+}
+
+.container {
+  padding: 5.8rem 1.6rem;
+}
+
+.card .card__container {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card .card__content {
+  padding: 3rem 3.13rem;
+}
+
+.card .card__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 4.4rem;
+  height: 2.8rem;
+  margin-bottom: 2.67rem;
+}
+
+.card .card__title {
+  font-family: var(--font-big-shoulders-display);
+  font-size: 2.67rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--veryLightGray);
+}
+
+.card .card__desc {
+  line-height: 1.67;
+  margin-bottom: 1.467rem;
+}
+
+button {
+  padding: 0.93rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  overflow: hidden;
+  font-size: 1.067rem;
+  background-color: var(--veryLightGray);
+  border: 3px solid var(--veryLightGray);
+  transition: background-color 300ms ease-in-out;
+}
+
+button:hover {
+  color: var(--transparentWhite) !important;
+  border: 3px solid var(--veryLightGray);
+  background-color: transparent;
+}
+
+@media (min-width: 64em) {
+  .container {
+    padding: 11.33rem 17.33rem;
+  }
+
+  .card .card__container {
+    display: flex;
+  }
+
+  .card .card__content {
+    padding: 3.067rem 3.33rem;
+  }
+
+  .card .card__desc {
+    margin-bottom: 5.33rem;
+  }
+}
